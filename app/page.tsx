@@ -120,22 +120,23 @@ export default function Home() {
                     </div>
                     <div className={styles.curriculumGrid}>
                         <div className={styles.curriculumCard}>
-                            <h4>SNU Math System</h4>
-                            <p>서울대 수학교육과 출신 연구진이 설계한 논리적 수학 완성 프로그램</p>
+                            <h4>SNU Korean Method</h4>
+                            <p>서울대 소비자학·로스쿨 출신 변호사 원장의 직강. 단순 암기를 넘어선 치밀한 지문 분석과 논리 체계를 구축합니다.</p>
                         </div>
                         <div className={styles.curriculumCard}>
-                            <h4>Yonsei English Master</h4>
-                            <p>연세대식 창의·비판적 사고를 접목한 완벽한 내신/수능 영어 대비</p>
+                            <h4>Yonsei Math System</h4>
+                            <p>연세대 치대 출신 원장의 수학 직강. 수능 0.5% 내 최상위권의 안목으로 복잡한 킬러 문항의 해법을 전수합니다.</p>
                         </div>
                         <div className={styles.curriculumCard}>
-                            <h4>1:1 Elite Clinic</h4>
-                            <p>빈틈없는 오답 분석 및 개인별 성취도에 맞춘 무한 밀착 관리 시스템</p>
+                            <h4>Premium 1:1 Clinic</h4>
+                            <p>소수정예 원장 직강의 가치를 결과로 증명합니다. 개별 학습 패턴 분석을 통한 완벽한 밀착 관리 시스템을 운영합니다.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            {/* Contact Section */}
+            {/* Contact Section */ }
             <section id="contact" className={styles.contact}>
                 <div className={styles.contactCard}>
                     <div className={styles.contactInfo}>
@@ -158,6 +159,6 @@ export default function Home() {
             <footer className={styles.footer}>
                 <p>&copy; 2026 SEOUL YONSEI ACADEMY. All rights reserved.</p>
             </footer>
-        </main>
+        </main >
     );
 }
