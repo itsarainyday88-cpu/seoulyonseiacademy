@@ -1,0 +1,54 @@
+:root {
+    /* SNU Navy: Deep & Credible */
+    --snu-navy: #0F0B5B;
+    /* Yonsei Blue: Bright & Intellectual */
+    --yonsei-blue: #003876;
+    /* Premium Accent: Champagne Gold */
+    --gold: #C5A059;
+    --gold-light: #E0C791;
+
+    /* Backgrounds */
+    --bg-sand: #FBF9F6;
+    --bg-white: #FFFFFF;
+
+    /* Text */
+    --text-primary: #1D1D1F;
+    --text-secondary: #424245;
+    --text-light: #86868B;
+
+    /* Dimensions/Transitions */
+    --header-height: 80px;
+    --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-sand);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.serif {
+    font-family: 'DM Serif Display', 'GyeonggiBatang', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
