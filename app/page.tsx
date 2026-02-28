@@ -25,7 +25,7 @@ export default function Home() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroBg}>
-                    <img src="/images/Exterior.jpg" alt="Seoul Yonsei Academy" />
+                    <img src="/images/hero_bg.png" alt="Seoul Yonsei Academy Premium Education" />
                     <div className={styles.overlay} />
                 </div>
                 <div className={styles.heroContent}>
@@ -158,6 +158,6 @@ export default function Home() {
             <footer className={styles.footer}>
                 <p>&copy; 2026 SEOUL YONSEI ACADEMY. All rights reserved.</p>
             </footer>
-        </main >
+        </main>
     );
 }
