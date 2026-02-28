@@ -9,10 +9,10 @@ export default function Home() {
             {/* Navigation */}
             <nav className={styles.nav}>
                 <div className={styles.navInner}>
-                    <div className={styles.logo}>
+                    <a href="/" className={styles.logo}>
                         <span className={styles.logoMain}>SEOUL YONSEI</span>
                         <span className={styles.logoSub}>ACADEMY</span>
-                    </div>
+                    </a>
                     <div className={styles.menu}>
                         <a href="#about">학원소개</a>
                         <a href="#facilities">교육환경</a>
@@ -139,19 +139,55 @@ export default function Home() {
             <section id="contact" className={styles.contact}>
                 <div className={styles.contactCard}>
                     <div className={styles.contactInfo}>
-                        <h2>Consultation</h2>
-                        <p>지금 바로 우리 아이의 가능성을 확인하세요.</p>
-                        <div className={styles.phoneBox}>
-                            <Phone size={24} />
-                            <span>010-XXXX-XXXX (가안)</span>
+                        <div className={styles.contactHeader}>
+                            <div className={styles.contactBadge}>PREMIUM CONSULTATION</div>
+                            <h2>Consultation</h2>
+                            <p>지금 바로 우리 아이의 가능성을 확인하세요.</p>
+                        </div>
+
+                        <div className={styles.benefitList}>
+                            <div className={styles.benefitItem}>
+                                <div className={styles.benefitIcon}><Users size={20} /></div>
+                                <div>
+                                    <h5>원장진 1:1 직접 상담</h5>
+                                    <p>모든 상담은 원장진이 직접 진행하며 개별 맞춤 솔루션을 제안합니다.</p>
+                                </div>
+                            </div>
+                            <div className={styles.benefitItem}>
+                                <div className={styles.benefitIcon}><LayoutGrid size={20} /></div>
+                                <div>
+                                    <h5>정밀 진단 평가</h5>
+                                    <p>단순 레벨 테스트가 아닌 논리 구조와 취약점을 정밀하게 분석합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.contactFooter}>
+                            <div className={styles.phoneBox}>
+                                <Phone size={20} />
+                                <span>010-XXXX-XXXX (상담직통)</span>
+                            </div>
                         </div>
                     </div>
-                    <form className={styles.contactForm}>
-                        <input type="text" placeholder="학생 성함 / 학교" />
-                        <input type="tel" placeholder="연락처" />
-                        <textarea placeholder="문의 사항 (학년, 과목 등)"></textarea>
-                        <button type="submit">지금 무료 상담 신청하기</button>
-                    </form>
+
+                    <div className={styles.formContainer}>
+                        <form className={styles.contactForm}>
+                            <div className={styles.inputGroup}>
+                                <label>학생 정보</label>
+                                <input type="text" placeholder="성함 및 학교 (예: 홍길동 / 운양고)" />
+                            </div>
+                            <div className={styles.inputGroup}>
+                                <label>연락처</label>
+                                <input type="tel" placeholder="010-0000-0000" />
+                            </div>
+                            <div className={styles.inputGroup}>
+                                <label>문의 내용</label>
+                                <textarea placeholder="학년, 최근 성적 등 구체적으로 적어주시면 더 정확한 상담이 가능합니다."></textarea>
+                            </div>
+                            <button type="submit">지금 프리미엄 상담 신청하기</button>
+                        </form>
+                        <p className={styles.formNote}>* 작성하신 정보는 상담 목적으로만 안전하게 보관됩니다.</p>
+                    </div>
                 </div>
             </section>
 

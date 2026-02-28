@@ -27,23 +27,30 @@
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    gap: 0.8rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logoMain {
-    font-size: 1.4rem;
-    font-weight: 900;
+    font-size: 1.6rem;
+    font-weight: 950;
     letter-spacing: -1px;
     color: var(--snu-navy);
     line-height: 1;
 }
 
 .logoSub {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--gold);
-    margin-top: 2px;
+    text-transform: uppercase;
 }
 
 .menu {
@@ -447,80 +454,196 @@
 }
 
 /* Contact */
+/* Contact Section Redesign */
 .contact {
     padding: 10rem 5%;
-    background-color: var(--snu-navy);
+    background-color: var(--bg-sand);
+    background-image: radial-gradient(circle at 0% 0%, rgba(15, 11, 91, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(0, 56, 118, 0.05) 0%, transparent 50%);
 }
 
 .contactCard {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     background: white;
-    border-radius: 30px;
+    border-radius: 40px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+    grid-template-columns: 1fr 1.1fr;
+    box-shadow: 0 50px 100px rgba(15, 11, 91, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contactInfo {
-    padding: 5rem;
-    background: var(--yonsei-blue);
+    padding: 5.5rem;
+    background: linear-gradient(135deg, var(--snu-navy) 0%, var(--yonsei-blue) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactInfo::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(197, 160, 89, 0.1);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.contactBadge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 100px;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.contactHeader h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
     color: white;
 }
 
-.contactInfo h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: white;
-}
-
-.contactInfo p {
+.contactHeader p {
+    font-size: 1.15rem;
     opacity: 0.8;
-    font-size: 1.1rem;
-    margin-bottom: 4rem;
+    line-height: 1.5;
 }
 
-.phoneBox {
+.benefitList {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.benefitItem {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.benefitIcon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 1.8rem;
-    font-weight: 900;
+    justify-content: center;
+    color: var(--gold-light);
+    flex-shrink: 0;
+}
+
+.benefitItem h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--gold-light);
 }
 
-.contactForm {
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.benefitItem p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    line-height: 1.6;
 }
 
-.contactForm input,
-.contactForm textarea {
+.contactFooter .phoneBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: white;
+}
+
+.contactFooter .phoneBox span {
+    color: var(--gold-light);
+}
+
+.formContainer {
+    padding: 5.5rem;
+    background: white;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.inputGroup label {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--snu-navy);
+    letter-spacing: -0.5px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
     padding: 1.2rem;
-    border: 1px solid #E5E5E7;
-    border-radius: 12px;
+    background: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 16px;
     font-size: 1rem;
+    transition: all 0.3s ease;
     outline: none;
 }
 
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    background: white;
+    border-color: var(--yonsei-blue);
+    box-shadow: 0 0 0 4px rgba(0, 56, 118, 0.05);
+}
+
+.inputGroup textarea {
+    height: 150px;
+    resize: none;
+}
+
 .contactForm button {
-    padding: 1.5rem;
+    margin-top: 1rem;
+    padding: 1.4rem;
     background: var(--snu-navy);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-weight: 800;
+    border-radius: 16px;
+    font-weight: 900;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s var(--ease-premium);
+    box-shadow: 0 15px 30px rgba(15, 11, 91, 0.15);
 }
 
 .contactForm button:hover {
     background: var(--yonsei-blue);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 56, 118, 0.2);
+}
+
+.formNote {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
 }
 
 .footer {
