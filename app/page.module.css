@@ -454,7 +454,12 @@
 /* Contact Section - Premium Background Restore */
 .contact {
     position: relative;
-    padding: 8rem 5%;
+    padding: 8rem 5% 12rem;
+    /* 위는 컴팩트하게, 아래는 넉넉하게 채움 */
+    margin-top: 5rem;
+    /* 커리큘럼과의 시각적 분리 */
+    border-radius: 40px 40px 0 0;
+    /* 우아한 상단 곡선으로 배경 분리 */
     overflow: hidden;
     background: #000;
 }
