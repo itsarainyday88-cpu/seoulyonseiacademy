@@ -10,7 +10,7 @@ export default function Home() {
             <nav className={styles.nav}>
                 <div className={styles.navInner}>
                     <a href="#" className={styles.logo}>
-                        <span className={styles.logoMain}>SEOUL YONSEI</span>
+                        <span className={styles.logoMain}>SEOULYONSEI ACADEMY</span>
                     </a>
                     <div className={styles.menu}>
                         <a href="#about">학원소개</a>
