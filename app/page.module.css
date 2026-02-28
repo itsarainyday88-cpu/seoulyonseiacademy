@@ -358,6 +358,99 @@
     background: var(--bg-sand);
 }
 
+/* Curriculum (AI Background) */
+.curriculum {
+    position: relative;
+    padding: 10rem 5%;
+    overflow: hidden;
+    color: white;
+}
+
+.curriculumBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.curriculumBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+.curriculumOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 11, 91, 0.85);
+}
+
+.curriculumContent {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionHeaderInner {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.sectionHeaderInner h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.sectionHeaderInner p {
+    color: var(--gold-light);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.curriculumGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.curriculumCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curriculumCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.curriculumCard h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gold-light);
+    border-bottom: 2px solid rgba(197, 160, 89, 0.3);
+    padding-bottom: 1rem;
+}
+
+.curriculumCard p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /* Contact Section - Premium Background Restore */
 .contact {
     position: relative;
@@ -458,8 +551,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-size: 1.8rem;
+    font-weight: 950;
     color: white;
 }
 
