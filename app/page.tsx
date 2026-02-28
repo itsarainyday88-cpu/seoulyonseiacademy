@@ -145,15 +145,15 @@ export default function Home() {
                         <div className={styles.contactBadge}>PREMIUM CONSULTATION</div>
                         <div className={styles.contactHeader}>
                             <h2>Elite<br />Consultation</h2>
-                            <p>서울대/연세대 출신 원장진이 우리 아이의 미래를 함께 고민합니다.</p>
+                            <p>서울대/연세대 출신 원장진이<br />우리 아이의 미래를 함께 고민합니다.</p>
                         </div>
                         <div className={styles.benefitList}>
                             <div className={styles.benefitItem}><ChevronRight size={18} /> 원장진 1:1 맞춤형 정밀 진단 시스템</div>
                             <div className={styles.benefitItem}><ChevronRight size={18} /> 학생 성향별 최적의 학습 로드맵 제안</div>
                         </div>
                         <div className={styles.phoneBox}>
-                            <Phone size={24} />
-                            <span>010-XXXX-XXXX</span>
+                            <Phone size={20} />
+                            <span>010-9625-5009</span>
                         </div>
                     </div>
 
