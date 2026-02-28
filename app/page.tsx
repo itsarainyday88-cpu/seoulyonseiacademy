@@ -137,6 +137,10 @@ export default function Home() {
 
             {/* Contact Section */}
             <section id="contact" className={styles.contact}>
+                <div className={styles.contactBg}>
+                    <img src="/images/hero_bg.png" alt="Consultation Background" />
+                    <div className={styles.contactOverlay} />
+                </div>
                 <div className={styles.contactCard}>
                     <div className={styles.contactInfo}>
                         <div className={styles.contactBadge}>PREMIUM CONSULTATION</div>
