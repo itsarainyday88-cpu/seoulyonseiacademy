@@ -133,10 +133,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-            {/* Contact Section */ }
+            {/* Contact Section */}
             <section id="contact" className={styles.contact}>
                 <div className={styles.contactCard}>
                     <div className={styles.contactInfo}>
