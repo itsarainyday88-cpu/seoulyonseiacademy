@@ -16,7 +16,6 @@ export default function Home() {
                         <a href="#about">학원소개</a>
                         <a href="#facilities">교육환경</a>
                         <a href="#curriculum">커리큘럼</a>
-                        <a href="#contact" className={styles.navCta}>상담예약</a>
                     </div>
                 </div>
             </nav>
@@ -34,11 +33,10 @@ export default function Home() {
                         연세대의 자부심을 담다
                     </h1>
                     <p className={styles.subtitle}>
-                        검증된 리더들의 교육 철학으로 우리 아이의 내일을 설계합니다.
+                        검증된 리더들의 교육 철학으로<br className={styles.mobileBreak} /> 우리 아이의 내일을 설계합니다.
                     </p>
                     <div className={styles.btnGroup}>
-                        <button className={styles.primaryBtn}>상담 예약하기 <ChevronRight size={18} /></button>
-                        <button className={styles.secondaryBtn}>커리큘럼 보기</button>
+                        <a href="#contact" className={styles.primaryBtn}>상담 예약하기 <ChevronRight size={18} /></a>
                     </div>
                 </div>
             </section>
@@ -72,7 +70,7 @@ export default function Home() {
                         <img src="/images/Directors.jpg" alt="Directors" />
                     </div>
                     <div className={styles.directorText}>
-                        <h3>믿음으로 맡기는 프리미엄 교육</h3>
+                        <h3>믿음으로 맡기는<br className={styles.mobileBreak} /> 프리미엄 교육</h3>
                         <p>
                             서울연세학원은 단순한 지식 전달을 넘어, 학생들이 스스로 사고하고 미래를 설계할 수 있는 힘을 길러줍니다.
                             서울대와 연세대의 정수를 담은 커리큘럼으로 최상의 결과를 약속합니다.
@@ -120,7 +118,7 @@ export default function Home() {
                     <div className={styles.curriculumGrid}>
                         <div className={styles.curriculumCard}>
                             <h4>SNU Korean Method</h4>
-                            <p>서울대 소비자학·로스쿨 출신 변호사 원장의 직강. 단순 암기를 넘어선 치밀한 지문 분석과 논리 체계를 구축합니다.</p>
+                            <p>서울대 출신 변호사 원장의 직강. 단순 암기를 넘어선 치밀한 지문 분석과 논리 체계를 구축합니다.</p>
                         </div>
                         <div className={styles.curriculumCard}>
                             <h4>Yonsei Math System</h4>
