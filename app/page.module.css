@@ -82,7 +82,6 @@
     height: 95vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0 5%;
     overflow: hidden;
 }
@@ -116,10 +115,8 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     color: white;
-    text-align: center;
-    margin: 0 auto;
     animation: heroFade 1.2s var(--ease-premium);
 }
 
@@ -161,21 +158,9 @@
     font-weight: 500;
 }
 
-.mobileBreak {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .mobileBreak {
-        display: block;
-        margin-bottom: 0.5rem; /* 줄 간격 미세 조정 */
-    }
-}
-
 .btnGroup {
     display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+    gap: 1rem;
 }
 
 .primaryBtn {
@@ -188,10 +173,8 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.5rem;
     cursor: pointer;
-    text-decoration: none !important;
     transition: all 0.3s var(--ease-premium);
 }
 
@@ -684,26 +667,5 @@
     .stats {
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .directorText {
-        text-align: center;
-    }
-
-    .features {
-        align-items: center;
-    }
-
-    .curriculumGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-
-    .curriculumCard {
-        padding: 2rem;
-    }
-
-    .curriculumCard:last-child {
-        grid-column: span 2;
     }
 }
